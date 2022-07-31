@@ -1,0 +1,18 @@
+_*Announcement about learning DSA*_
+
+Hey  everyone,
+I hope U r doing well and things are going in ur favor. I(SRR, Nam to sona hi Hoga (Just joking)) decided to start a series that basically focuses on learning and solving DSA problems on a regular daily basis. Every day I push a problem in Github from 12 AM-6 AM based on some topic like Tree, DP, and some basic concepts that are generally part of some SDE sheet. You have to solve this question in 12hrs and U may push it to my Github account. If you aren’t able to solve it then you can ask for help in the WP  group. Otherwise, You can see the solution and then continue solving, or better if You watch some hints and then continue. I suggest doing it before going to bed(If the question is updated). 
+
+The aim of the series is to make ourselves consistent in coding and also at the same time prepare for coding interview rounds. By this, a Coding environment may be built and by pushing a lit everyday U might clear a good company(I wish).
+
+Again, this is not a promotional post or something. I just think it will be helpful for us and learn in the same way. So, I announced it. If someone is hurt then Sorry.
+
+Name of the series - Let’s learn DSA.
+Starting Date-1/8/2022
+Problem pushing time-12 AM
+Duration - 12 hr
+QS/Day- 1-2(May be Sunday 1 extra)
+WP Group Link - https://chat.whatsapp.com/LDncHzY2ggWG8R5HuM9hLl
+Github link - 
+
+Thanks from SRR and my frnd ```Makwy```.

@@ -1,0 +1,59 @@
+class Solution {
+public:
+    void setZeroes(vector<vector<int>>& matrix) {
+        bool x=true;
+        bool y=true;
+        int row=matrix.size();
+        int col=matrix[0].size();
+        //if the first row has zero
+        for(int i=0;i<col;i++){
+           if( matrix[0][i]==0){
+               x=false;
+           }
+        }
+        //if the first column has zero
+        for(int i=0;i<row;i++){
+           if( matrix[i][0]==0){
+               y=false;
+           }
+        }
+        //in the remaining (row-1 X col-1) matrix mark the zeroes in the marker
+        for(int i=1;i<row;i++){
+            for(int j=1;j<col;j++){
+                if(matrix[i][j]==0){
+                    matrix[0][j]=0;
+                    matrix[i][0]=0;
+                }
+            }
+        }
+        //traverse through the marker and mark the respective row and column zero
+        for(int i=1;i<col;i++){
+            if(matrix[0][i]==0){
+                for(int j=1;j<row;j++){
+                    matrix[j][i]=0;
+                }
+            }
+        }
+        for(int i=1;i<row;i++){
+            if(matrix[i][0]==0){
+                for(int j=1;j<col;j++){
+                    matrix[i][j]=0;
+                }
+            }
+        }
+        //if the marker contains natural zeroes before, mark them zero too
+        if(x==false){
+            for(int i=0;i<col;i++){
+               matrix[0][i]=0;
+           }
+        }
+        
+        if(y==false){
+            for(int i=0;i<row;i++){
+               matrix[i][0]=0;
+           }
+        }
+        
+        
+    }
+};

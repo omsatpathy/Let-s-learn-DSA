@@ -6,17 +6,20 @@ public:
         int n = matrix[0].size();
         for(int i=0; i<m; i++){
             for(int j=0; j<n; j++){
-                if(matrix[i][j] == 0) {
+                if(matrix[i][j] == 0){
                     row.push_back(i);
                     col.push_back(j);
                 }
             }
         }
-        for(int i=0; i<m; i++){
+        for(auto i: row){
             for(int j=0; j<n; j++){
-                if(find(row.begin(), row.end(), i) != row.end() || find(col.begin(), col.end(), j) != col.end()){
-                    matrix[i][j] = 0;
-                }
+                matrix[i][j] = 0;
+            }
+        }
+        for(auto j: col){
+            for(int i=0; i<m; i++){
+                matrix[i][j] = 0;
             }
         }
     }

@@ -13,7 +13,7 @@ public:
             vector<int> v;
             // iterate through all the index and update the value              
             for(int j = 0; j <= i; j++){
-                // As we can see in the animation, the value of required index depends on previous rows j and j-1 index value 
+                // As we can see in the animation, the value of required index depends on previous row's j and j-1 index 
                 dp[i][j] = dp[i-1][j] + ((j - 1 >= 0)? dp[i-1][j-1]:0); 
                 v.push_back(dp[i][j]);
             }

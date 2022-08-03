@@ -1,0 +1,25 @@
+class Solution {
+public:
+void nextPermutation(vector<int>& nums) {
+int i;
+int n=nums.size();
+for(i=n-2;i>=0;i--){
+if(nums[i+1]>nums[i]){
+break;
+}
+}
+if(i<0){
+sort(nums.begin(),nums.end());
+}
+else{
+int j;
+int k=nums[i];
+for(j=i+1;j<n;j++){
+if(k<nums[j]){
+swap(nums[i],nums[j]);
+}
+}
+sort(nums.begin()+i+1,nums.end());
+}
+}
+};

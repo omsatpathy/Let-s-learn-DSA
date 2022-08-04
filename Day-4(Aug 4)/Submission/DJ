@@ -1,0 +1,18 @@
+class Solution {
+public:
+    int maxSubArray(vector<int>& nums) {
+        int loc=0,ans=INT_MIN;
+        
+        for(auto x:nums)
+        {
+            loc+=x;
+            
+            ans=max(loc,ans);
+            
+            if(loc<0)
+                loc=0;
+        }
+        
+        return ans;
+    }
+};

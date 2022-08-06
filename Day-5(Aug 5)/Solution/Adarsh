@@ -1,0 +1,32 @@
+class Solution {
+public:
+    void sortColors(vector<int>& nums) {
+        int ct0=0, ct1=0, ct2=0;
+        for(auto it = nums.begin(); it!= nums.end(); it++){
+            if(*it == 0){
+                ct0++;
+            }
+            else if(*it==1){
+                ct1++;
+            }
+            else
+                ct2++;
+        }
+        nums.clear();
+        while(ct0){
+            nums.emplace_back(0);
+            ct0--;
+        }
+        while(ct1){
+            nums.emplace_back(1);
+            ct1--;
+        }
+        while(ct2){
+            nums.emplace_back(2);
+            ct2--;
+        }
+        for(auto &value: nums){
+            cout<<value;
+        }
+    }
+};

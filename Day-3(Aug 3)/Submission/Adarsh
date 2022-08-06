@@ -13,11 +13,10 @@ public:
         if(index1 != -1){
             for(i = n-1;  i > index1; --i){
                 if(nums[i]>nums[index1]){
-                    index2 = i;
                     break;
                 }
             }
-            swap(nums[index1], nums[index2]);
+            swap(nums[index1], nums[i]);
         }
         reverse(nums.begin() + index1 + 1, nums.end());
     }
